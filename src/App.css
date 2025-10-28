@@ -1,0 +1,314 @@
+@import "tailwindcss";
+
+
+/* box-shadow: 0 0 20px rgba(0, 240, 240, 0.2); */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Loding_video{
+  padding: 50px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background: 
+  linear-gradient(#33005d, #211f1f);
+  z-index: 3;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+
+/* typing function */
+.Loding_video h2, h4{
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  overflow: hidden;
+
+}
+
+#title{
+  width: 38ch;
+  animation: typing 1s steps(38),
+  blink .5s infinite step-end alternate;
+
+}
+
+#first-text{
+  width: 25ch;
+  animation: typing .5s steps(25),
+  blink .5s infinite step-end alternate;
+
+}
+
+#second-text{
+  width: 23ch;
+  animation: typing .5s steps(23),
+  blink .5s infinite step-end alternate;
+
+}
+
+/* End Function */
+
+@keyframes typing {
+  from { width: 0; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+body{
+  font-family: "Bitcount Grid Single", sans-serif;
+  color: rgb(255, 255, 255);
+   background: 
+    linear-gradient(#33005d, #211f1f);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  /*The Background Attachment is equal to position: sticky but is for backgrounds*/
+  background-attachment: fixed;
+  transition: .5s;
+}
+
+.sub-body{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.img-effect{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/*Hacer Animaciones esto era el keyframe*/
+
+@keyframes moverVertical {
+  0% {
+    background-position: bottom 0vh right 0px;
+  }
+  100% {
+    background-position: bottom 100vh right 0px;
+  }
+}
+
+
+.NavLink-Header{
+  display: flex; 
+  align-items: center;
+  gap: 10px;
+}
+
+header{
+  position: sticky;
+  top: 25px;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: rgb(24, 24, 24);
+  border-radius: 30px; 
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: solid 3px rgb(43, 43, 43);
+}
+
+header ul{
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  background-color: rgb(43, 43, 43);
+  padding: 7px;
+  border-radius: 15px;
+  max-width: 180px;
+  max-height: 59px;
+}
+
+.github{
+  width: 45px;
+  transition: .2s;
+}
+
+.instagram{
+  width: 45px;
+  transition: .2s;
+
+}
+
+.whatsapp{
+  width: 45px;
+  transition: .2s;
+
+}
+
+.github:hover{
+  width: 50px;
+  transition: .2s;
+
+}
+
+.instagram:hover{
+  width: 50px;
+  transition: .2s;
+
+}
+
+.whatsapp:hover{
+  width: 50px;
+  transition: .2s;
+
+}
+
+.category{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+
+}
+
+.category-card{
+  display: flex;
+  border: 3px solid rgb(6, 151, 255);
+  padding: 15px;
+  border-radius: 30px;
+  width: 500px;
+  gap: 15px;
+  
+}
+
+.category-card h2{
+  font-size: 25px;
+  
+}
+
+.Retro_vision{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background: linear-gradient(
+  to top,
+  rgb(0,0,0),
+  rgb(62,62,62) 1%,
+  rgb(0,0,0) 2%,
+  rgb(62,62,62) 3%,
+  rgb(0,0,0) 4%,
+  rgb(62,62,62) 5%,
+  rgb(0,0,0) 6%,
+  rgb(62,62,62) 7%,
+  rgb(0,0,0) 8%,
+  rgb(62,62,62) 9%,
+  rgb(0,0,0) 10%,
+  rgb(62,62,62) 11%,
+  rgb(0,0,0) 12%,
+  rgb(62,62,62) 13%,
+  rgb(0,0,0) 14%,
+  rgb(62,62,62) 15%,
+  rgb(0,0,0) 16%,
+  rgb(62,62,62) 17%,
+  rgb(0,0,0) 18%,
+  rgb(62,62,62) 19%,
+  rgb(0,0,0) 20%,
+  rgb(62,62,62) 21%,
+  rgb(0,0,0) 22%,
+  rgb(62,62,62) 23%,
+  rgb(0,0,0) 24%,
+  rgb(62,62,62) 25%,
+  rgb(0,0,0) 26%,
+  rgb(62,62,62) 27%,
+  rgb(0,0,0) 28%,
+  rgb(62,62,62) 29%,
+  rgb(0,0,0) 30%,
+  rgb(62,62,62) 31%,
+  rgb(0,0,0) 32%,
+  rgb(62,62,62) 33%,
+  rgb(0,0,0) 34%,
+  rgb(62,62,62) 35%,
+  rgb(0,0,0) 36%,
+  rgb(62,62,62) 37%,
+  rgb(0,0,0) 38%,
+  rgb(62,62,62) 39%,
+  rgb(0,0,0) 40%,
+  rgb(62,62,62) 41%,
+  rgb(0,0,0) 42%,
+  rgb(62,62,62) 43%,
+  rgb(0,0,0) 44%,
+  rgb(62,62,62) 45%,
+  rgb(0,0,0) 46%,
+  rgb(62,62,62) 47%,
+  rgb(0,0,0) 48%,
+  rgb(62,62,62) 49%,
+  rgb(0,0,0) 50%,
+  rgb(62,62,62) 51%,
+  rgb(0,0,0) 52%,
+  rgb(62,62,62) 53%,
+  rgb(0,0,0) 54%,
+  rgb(62,62,62) 55%,
+  rgb(0,0,0) 56%,
+  rgb(62,62,62) 57%,
+  rgb(0,0,0) 58%,
+  rgb(62,62,62) 59%,
+  rgb(0,0,0) 60%,
+  rgb(62,62,62) 61%,
+  rgb(0,0,0) 62%,
+  rgb(62,62,62) 63%,
+  rgb(0,0,0) 64%,
+  rgb(62,62,62) 65%,
+  rgb(0,0,0) 66%,
+  rgb(62,62,62) 67%,
+  rgb(0,0,0) 68%,
+  rgb(62,62,62) 69%,
+  rgb(0,0,0) 70%,
+  rgb(62,62,62) 71%,
+  rgb(0,0,0) 72%,
+  rgb(62,62,62) 73%,
+  rgb(0,0,0) 74%,
+  rgb(62,62,62) 75%,
+  rgb(0,0,0) 76%,
+  rgb(62,62,62) 77%,
+  rgb(0,0,0) 78%,
+  rgb(62,62,62) 79%,
+  rgb(0,0,0) 80%,
+  rgb(62,62,62) 81%,
+  rgb(0,0,0) 82%,
+  rgb(62,62,62) 83%,
+  rgb(0,0,0) 84%,
+  rgb(62,62,62) 85%,
+  rgb(0,0,0) 86%,
+  rgb(62,62,62) 87%,
+  rgb(0,0,0) 88%,
+  rgb(62,62,62) 89%,
+  rgb(0,0,0) 90%,
+  rgb(62,62,62) 91%,
+  rgb(0,0,0) 92%,
+  rgb(62,62,62) 93%,
+  rgb(0,0,0) 94%,
+  rgb(62,62,62) 95%,
+  rgb(0,0,0) 96%,
+  rgb(62,62,62) 97%,
+  rgb(0,0,0) 98%,
+  rgb(62,62,62) 99%,
+  rgb(0,0,0) 100%
+  );
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 4;
+  animation-name: moverVertical;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}

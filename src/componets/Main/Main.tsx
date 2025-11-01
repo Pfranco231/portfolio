@@ -3,7 +3,8 @@
 function Main() {
 
   return (
-    <>
+    <>  
+      <center><h1 className="change-typografy">Welcome to my portfolio</h1></center>
       <div className="category">
         <div className="category-card">
           <div>
